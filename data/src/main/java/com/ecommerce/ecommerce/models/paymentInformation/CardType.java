@@ -1,12 +1,13 @@
-package com.ecommerce.ecommerce.models;
+package com.ecommerce.ecommerce.models.paymentInformation;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("Orders")
+@Document
 @AllArgsConstructor
 @RequiredArgsConstructor
-
-public class Order {
+public enum CardType {
+        MASTER_CARD, VERVE, VISA_CARD, AMERICAN_EXPRESS;
 }

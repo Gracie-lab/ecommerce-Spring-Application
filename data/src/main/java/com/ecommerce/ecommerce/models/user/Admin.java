@@ -1,4 +1,4 @@
-package com.ecommerce.ecommerce.models;
+package com.ecommerce.ecommerce.models.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

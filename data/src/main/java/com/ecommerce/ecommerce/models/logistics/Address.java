@@ -1,5 +1,4 @@
-package com.ecommerce.ecommerce.models;
-
+package com.ecommerce.ecommerce.models.logistics;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +9,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @Data
-public class ShoppingCart {
-    private Item item;
-    private int quantity;
+public class Address {
+    private String cityName;
+    private String streetName;
+    private String houseNumber;
 }
