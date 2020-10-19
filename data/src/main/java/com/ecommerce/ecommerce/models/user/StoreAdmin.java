@@ -9,10 +9,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @Data
-public class StoreAdmin extends User {
+public class StoreAdmin implements UserInterface{
 
-    @Override
-    void jump() {
+   public void register(){
 
-    }
+   }
+   public void addProduct(){}
 }

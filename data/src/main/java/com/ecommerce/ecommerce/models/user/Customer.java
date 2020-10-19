@@ -10,12 +10,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @RequiredArgsConstructor
 
-public class Customer extends User {
+public class Customer implements UserInterface{
     private BillingInformation billingInformation;
     private ShoppingCart cart;
 
-    @Override
-    void jump() {
+    public void register(){
 
     }
 }
