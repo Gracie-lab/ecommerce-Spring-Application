@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @Data
-public class Admin extends User {
+public class StoreAdmin extends User {
 
     @Override
     void jump() {
