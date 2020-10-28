@@ -12,6 +12,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class Item {
     private byte itemID;
+    private double price;
+    private String name;
+    private String description;
     private String itemType;
     private String colour;
     private String seller;
