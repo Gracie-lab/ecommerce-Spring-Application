@@ -46,4 +46,7 @@ public class User {
                 ", emailAddress='" + emailAddress + '\'' +
                 '}';
     }
+
+ public String getRole() {
+ }
 }
