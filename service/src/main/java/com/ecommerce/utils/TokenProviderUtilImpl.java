@@ -16,8 +16,10 @@
 package com.ecommerce.utils;
 
 
-import com.desirehealth.exception.AppException;
-import com.desirehealth.user.User;
+import com.ecommerce.exception.AppException;
+import com.ecommerce.ecommerce.models.user.User;
+import com.ecommerce.ecommerce.models.user.User;
+import com.ecommerce.exception.AppException;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

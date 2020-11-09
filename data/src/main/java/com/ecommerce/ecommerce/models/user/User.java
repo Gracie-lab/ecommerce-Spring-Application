@@ -6,18 +6,25 @@ import com.mongodb.lang.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.LinkedList;
+import java.util.UUID;
 
 @Document("Users")
 @AllArgsConstructor
 @RequiredArgsConstructor
 @Data
 public class User {
-   private String name;
+ @Id
+ private Integer id;
+ private Role role;
+   private String firstName;
+   private String lastName;
+   private String email;
     private String phone;
     private Address homeAddress;
 
@@ -29,8 +36,7 @@ public class User {
     @DBRef
     private LinkedList<Order> order;
 
-    @DBRef
-    private StoreAdmin storeAdmin;
+
 
     @Nullable
     @DBRef
@@ -40,13 +46,15 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
+                "name='" + firstName + '\'' +
+                "name='" + lastName + '\'' +
                 ", phone='" + phone + '\'' +
                 ", homeAddress=" + homeAddress +
                 ", emailAddress='" + emailAddress + '\'' +
                 '}';
     }
 
- public String getRole() {
- }
+
+
+
 }

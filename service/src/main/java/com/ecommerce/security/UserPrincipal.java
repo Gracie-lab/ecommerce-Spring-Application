@@ -18,7 +18,8 @@
  * */
 package com.ecommerce.security;
 
-import com.desirehealth.user.User;
+import com.ecommerce.ecommerce.models.user.User;
+import com.ecommerce.ecommerce.models.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -33,7 +34,7 @@ import java.util.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserPrincipal implements UserDetails {
-    private  UUID id;
+    private  Integer id;
 
     private  String name;
 

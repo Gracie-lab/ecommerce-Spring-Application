@@ -6,8 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
-@AllArgsConstructor
-@RequiredArgsConstructor
+//@AllArgsConstructor
+//@RequiredArgsConstructor
 public enum CardType {
         MASTER_CARD, VERVE, VISA_CARD, AMERICAN_EXPRESS;
 }

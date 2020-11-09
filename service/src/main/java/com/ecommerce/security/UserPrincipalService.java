@@ -1,12 +1,13 @@
 package com.ecommerce.security;
 
 
+import com.ecommerce.ecommerce.models.user.User;
+import com.ecommerce.ecommerce.models.user.UserLoginRequestDTO;
 import com.ecommerce.exception.AuthorizationException;
 import com.ecommerce.service.validation.validation.UserService;
 //import com.ecommerce.service.validation.validation;
 //import com.desirehealth.user.UserLoginRequestDTO;
 import com.ecommerce.utils.TokenProviderUtil;
-import com.ecommerce.ecommerce.models.user.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -165,7 +166,6 @@ public class UserPrincipalService implements UserDetailsService, UserDetails {
                 .orElseThrow(() ->
                         new UsernameNotFoundException("User not found with username or email : " + username)
                 );
-
         return UserPrincipal.create(user);
     }
 
@@ -188,4 +188,4 @@ public class UserPrincipalService implements UserDetailsService, UserDetails {
     return new JWTBearerToken(tokenProvider.generateLoginToken(authentication, user));
     
     }
-}3
+}

@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @RequiredArgsConstructor
 
-public class Customer implements UserInterface{
+public class Customer {
     private BillingInformation billingInformation;
     private ShoppingCart cart;
 

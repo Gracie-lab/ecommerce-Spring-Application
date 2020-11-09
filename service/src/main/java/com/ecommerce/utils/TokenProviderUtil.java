@@ -4,6 +4,7 @@ package com.ecommerce.utils;
 //import com.desirehealth.user.User;
 //import io.jsonwebtoken.Claims;
 import com.ecommerce.ecommerce.models.user.User;
+import io.jsonwebtoken.Claims;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
